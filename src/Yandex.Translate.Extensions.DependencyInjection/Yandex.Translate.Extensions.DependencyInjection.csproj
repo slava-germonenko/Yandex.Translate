@@ -8,7 +8,7 @@
         <Authors>Slava Germonenko</Authors>
         <Title>Yandex.Translate.Extensions.DependencyInjection</Title>
         <PackageId>Yandex.Translate.Extensions.DependencyInjection</PackageId>
-        <PackageDescription>Dependency Injection extensions for for the Yandex.Translate package.</PackageDescription>
+        <PackageDescription>Dependency Injection extensions for the Yandex.Translate package.</PackageDescription>
         <RepositoryUrl>git@github.com:slava-germonenko/Yandex.Translate.git</RepositoryUrl>
     </PropertyGroup>
 
