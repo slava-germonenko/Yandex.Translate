@@ -6,6 +6,9 @@ using Yandex.Translate.Core.Models;
 
 namespace Yandex.Translate.Core;
 
+/// <summary>
+/// Yandex.Translate facade.
+/// </summary>
 public class TranslateClient
 {
     private readonly Uri _baseTranslateUri = new("https://translate.yandex.net/api/v1.5/tr.json/translate");
@@ -28,6 +31,25 @@ public class TranslateClient
     
     public TranslateClient(TranslateClientConfiguration configuration) : this(new HttpClient(), configuration) { }
 
+    /// <summary>
+    /// Get translations 
+    /// </summary>
+    /// <param name="text">Text to be translated.</param>
+    /// <param name="sourceLangCode">Source language code, e.g. "en", "es", "ru".</param>
+    /// <param name="targetLangCode">Target language code, e.g. "en", "es", "ru".</param>
+    /// <param name="format">
+    ///     Specifies whether text to be translated is a plain text or HTML.
+    ///     <see cref="TextFormat"/>
+    /// </param>
+    /// <returns>
+    ///     Translation result – <see cref="Models.Translation"/>
+    /// </returns>
+    /// <exception cref="TranslateException">
+    ///     Thrown if an error occurs trying to communicate and retrieve response from the Yandex.Translate.
+    /// </exception>
+    /// <exception cref="TranslateApiException">
+    ///     Thrown if Yandex.Translate return error result. It contains error message thrown by Yandex.Translate.
+    /// </exception>
     public async Task<Translation> TranslateAsync(
         string text,
         string sourceLangCode,
@@ -52,6 +74,18 @@ public class TranslateClient
         return new(text, translateResult.Text, sourceLangCode, targetLangCode, format);
     }
 
+    /// <summary>
+    /// Retrieves supported languages from the Yandex.Translate API.
+    /// </summary>
+    /// <param name="displayLanguageCode">
+    ///     Language that will be used by Yandex.Translate to generate languages metadata in.
+    /// </param>
+    /// <returns>
+    ///     <see cref="Models.SupportedLanguagesData"/> object.
+    /// </returns>
+    /// <exception cref="TranslateException">
+    ///     Thrown if an error occurs trying to communicate and retrieve response from the Yandex.Translate.
+    /// </exception>
     public async Task<SupportedLanguagesData> GetSupportedLanguages(string displayLanguageCode = "en")
     {
         var apiRequest = BuildSupportedLanguagesApiRequest(displayLanguageCode);
@@ -81,6 +115,18 @@ public class TranslateClient
         return languagesData;
     }
 
+    /// <summary>
+    /// Detects language of a given string.
+    /// </summary>
+    /// <param name="text">Text to be used as a reference.</param>
+    /// <param name="hintLanguages">
+    ///     Languages to be used as a hint.
+    ///     When detecting a language, hint languages will be preferred.
+    /// </param>
+    /// <returns>Detected language code.</returns>
+    /// <exception cref="TranslateException">
+    ///     Thrown if an error occurs trying to communicate and retrieve response from the Yandex.Translate.
+    /// </exception>
     public async Task<string> DetectLanguageAsync(string text, IEnumerable<string>? hintLanguages = null)
     {
         var apiRequest = BuildDetectLanguageApiRequest(text, hintLanguages);
