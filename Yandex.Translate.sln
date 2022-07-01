@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Translate.Core", "src\Yandex.Translate.Core\Yandex.Translate.Core.csproj", "{C5673DB8-F3A8-453F-80F6-4F1C575A77F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Translate.SampleApp", "Yandex.Translate.SampleApp\Yandex.Translate.SampleApp.csproj", "{9247BCA0-5A7D-4588-9BF8-6298C3C91BC8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{C5673DB8-F3A8-453F-80F6-4F1C575A77F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5673DB8-F3A8-453F-80F6-4F1C575A77F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5673DB8-F3A8-453F-80F6-4F1C575A77F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9247BCA0-5A7D-4588-9BF8-6298C3C91BC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9247BCA0-5A7D-4588-9BF8-6298C3C91BC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9247BCA0-5A7D-4588-9BF8-6298C3C91BC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9247BCA0-5A7D-4588-9BF8-6298C3C91BC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
