@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>1.0.0</Version>
+        <Authors>Slava Germonenko</Authors>
+        <Title>Yandex.Translate</Title>
+        <PackageId>Yandex.Translate</PackageId>
+        <PackageDescription>Simple client for the Yandex.Translate service.</PackageDescription>
+        <RepositoryUrl>git@github.com:slava-germonenko/Yandex.Translate.git</RepositoryUrl>
+    </PropertyGroup>
+
+</Project>
