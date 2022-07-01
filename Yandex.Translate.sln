@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{306A610E-E7E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Translate.SampleApp", "src\Yandex.Translate.SampleApp\Yandex.Translate.SampleApp.csproj", "{1F76C7D5-8AC3-44FC-A63E-4ADB8E448CF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Translate.Extensions.DependencyInjection", "src\Yandex.Translate.Extensions.DependencyInjection\Yandex.Translate.Extensions.DependencyInjection.csproj", "{C06C2AAD-9818-429F-9916-84B36A53F5CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +22,14 @@ Global
 		{1F76C7D5-8AC3-44FC-A63E-4ADB8E448CF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F76C7D5-8AC3-44FC-A63E-4ADB8E448CF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F76C7D5-8AC3-44FC-A63E-4ADB8E448CF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C06C2AAD-9818-429F-9916-84B36A53F5CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C06C2AAD-9818-429F-9916-84B36A53F5CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C06C2AAD-9818-429F-9916-84B36A53F5CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C06C2AAD-9818-429F-9916-84B36A53F5CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C5673DB8-F3A8-453F-80F6-4F1C575A77F0} = {306A610E-E7E2-43F9-BD81-19E33FC792E5}
 		{1F76C7D5-8AC3-44FC-A63E-4ADB8E448CF4} = {306A610E-E7E2-43F9-BD81-19E33FC792E5}
+		{C06C2AAD-9818-429F-9916-84B36A53F5CC} = {306A610E-E7E2-43F9-BD81-19E33FC792E5}
 	EndGlobalSection
 EndGlobal
